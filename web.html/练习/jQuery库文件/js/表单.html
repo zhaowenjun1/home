@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width: 500px;
+				height: 700px;
+				border: 1px black solid;
+				margin: 0  auto;
+			}
+			.box_1{
+				height: 100px;
+				border: 1px black solid;
+				text-align: center;
+				line-height: 100px;
+				font-size: 25px;
+				color: darkblue;
+			
+			}
+			.list{
+				padding: 50px;/*设置里面的块距离最外面的块上下左右的距离*/
+				
+			}
+			.int{
+				background: url(img/1.PNG) no-repeat  350px center;
+				/*添加背景图片，设置不平铺，位置x轴靠右，y轴居中*/
+				display: block;/*将行级元素变为块级元素，可设宽高*/
+				width: 400px;
+				height: 80px;
+				border: none;
+				border-bottom: 1px black solid;
+			
+				font-size: 40px;
+				font-family: "微软雅黑";
+				font-style: initial;
+				
+			}
+			.int:focus{
+				outline: none;/*取消鼠标点击时的蓝框*/
+			}
+			p{
+				margin:50px auto ;
+			text-align: center;	
+			}
+			.btn{
+				margin:  0 auto;
+			
+				
+			
+				
+			}
+			button{
+				width: 100px;
+				height: 60px;
+				margin: 20px  46px  ;
+				border-radius:20px ;
+				border: none;
+				border: 1px #3E3E3E solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box_1">
+				用户登录
+			</div>
+			<div class="list">
+				<form><!--表单样式格式-->
+					
+					<input class="int" type="text"   placeholder="请输入用户名"/><!--输入框设置格式-->
+					<input class="int" type="password" placeholder="请输入密码" /><!--密码输入格式-->
+					<input class="int" type="password"   placeholder="请再次输入密码"/>
+					<p><input type="checkbox" name="ls" /> 我已阅读并同意协议 </p><!--多选按钮输入格式-->
+				    <div class="btn"><button>登录</button> <button>注册</button></div><!--自定义按钮-->
+				</form><!--表单样式格式-->
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+		</style>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script>
+//			$(document).ready(function(){
+//				$("button").click(function(){
+//					$("span").parentsUntil().siblings("li").children().css({"border":"2px solid red" });
+//				});
+				$(document).ready(function(){
+				$("button").click(function(){
+					$("ul").children().find("li").find("span").css({"background":"red"});
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<ul>1111
+			<strong>
+				555
+				<a>
+					666
+					<span>hello，你好</span>
+				</a>
+				<li>
+				222<a>333<span>hello</span></a>
+			</li>
+			</strong>
+			
+			
+		</ul>
+		<button>点击</button>
+	</body>
+</html>

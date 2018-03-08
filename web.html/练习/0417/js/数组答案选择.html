@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<style>
+			.longbox{
+				width: 400px;
+				height: 200px;
+				border: 1px #3e3e3e solid;
+				box-sizing: border-box;
+				padding: 50px 50px;
+				position: relative;
+			}
+			.mima{
+				display: block;
+				margin: 0 auto;
+				width: 200px;
+				height: 40px;
+			text-align: right;
+			padding-right: 20px;
+				
+				}
+				p{
+					color: red;
+                    font-size: 20px;
+				}
+				button{
+					display: block;
+					width: 80px;
+					height: 30px;
+					position: absolute;
+					bottom: 20px;
+				    
+				  
+				  margin: 0  110px;
+				}
+				</style>		
+	</head>
+	<body>
+		<div class="longbox">
+			<input type="password" class="mima" />
+			<p><span></span></p>
+			<button >登陆</button>
+		</div>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script>
+			var W = new Array('112','223','333','555')
+			var login = 0
+			$('button').click(function(){
+				var WW = $('.mima').val();
+				
+							
+						
+				for(i=0;i<=3;i++){
+					if(WW==W[i]){
+					login = 1	
+					
+					}
+				}
+//					if (WW==' ') {
+//							alert('请输入密码')
+//						}else{
+//							
+//						}
+//					
+				if(login){
+					alert('正确')
+					
+				}
+				else{
+					alert(7777)
+				
+				}
+			
+			})
+		</script>
+	</body>
+</html>

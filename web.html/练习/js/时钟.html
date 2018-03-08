@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.timebox{
+				height: 400px;
+				width: 400px;
+				/*border: none;      将边框线条取消显示*/   
+				border: 1px #3e3e3e solid;
+				margin: 0 auto;
+			  margin-top: 80px;
+			  border-radius: 400px;
+			  background: url(../img/snow1.png) no-repeat  250px 240px; /*设置图片位置 x轴上多远，和y轴上多远*/
+			  
+			  
+			}
+			#riqi{
+				text-align: center;
+				font-size: 35px;
+				font-weight: bold;
+			margin-top: 140px;
+			
+			}
+			#shijian{
+			  color: green;
+				text-align: center;
+				font-size: 50px;
+			margin-top: 20px;  /*设置字体居中位置*/
+			}
+			#wea{
+				
+				margin-top: 20px;
+				text-align: right;
+				margin-right: 150px;
+				color: gray;
+			}
+			/*body{
+				background: url(../img/539435434771538873.jpg) no-repeat center; /* 添加背景图片并设置位置居中。*/*/
+			}
+		</style>
+	</head>
+	<body>
+		  <div class="timebox">      <!--  添加块 --> 
+			<p id="riqi">2014年11月12日&nbsp;星期一</p>   <!--  设置块内日期和时间 --> 
+			<p id="shijian">12:15:25</p>
+			<p id="wea"> 北京天气：多云</p>
+		</div>                      
+		
+		<script> // 写一对script  包起我们编写的jss命令  
+			
+	function getTime () {      // 写一个整体的函数，为了方便后面循环语句的使用   
+		
+	
+			var shuzu =new Array('日','一','二','三','四','五','六') // 写一个数组，为了方便后面将数字转换为中文汉字。
+			
+			var time = new Date();  // 声明一个变量,获取到当前的时间信息
+		    var year = time.getFullYear();  // 获取到当前的年份
+			var month = time.getMonth()+1;// 获取到当前的月份，后面加上1，获取到的月份会比实际月份少一天，是0-11  这 12个整数所以。。
+			var day = time.getDate();// 获取到当前的天数几号
+			var weekday = time.getDay();// 获取到当前的星期，会显示0-6这7个整数。
+		
+			var hours = time.getHours();// 获取到当前的小时，没有0
+			var min = time.getMinutes();// 获取到当前的分钟，没有0
+			var sco = time.getSeconds();// 获取到当前的秒，没有0 
+			
+			function hanshu1(x){  // 再写一个函数。用if语句来实现10以内的数前面会有个0，
+	  	if(x<10){
+	  		x='0'+x;
+	  	}
+	  	return x;
+	  }
+			 hours1=hanshu1(hours); // 在用一个变量来接受我们输出的值
+			min1=hanshu1(min);
+			sco1=hanshu1(sco);
+			
+		timebox = year+'年'+month+'月'+day+'日   星期'+shuzu[weekday];  //将获取到的年月日信息写入另一个变量，方便后面用
+			// console.log(timebox);  测试代码是否正确，能否获取到信息
+			
+	       xiaoshi = hours1+':'+min1+':'+sco1;  //将获取到的时间分钟秒信息写入另一个变量，方便后面用
+			
+			//console.log(xiaoshi);   测试代码是否正确，能否获取到信息
+			var riqi = document.getElementById('riqi');  //通过id获取上面的元素，并赋值给
+		riqi.innerText=timebox;        //然后将上面获取到的年月日信息在写入到刚开始那个静态年月日里面去
+		 var shijian =document.getElementById('shijian');
+		 shijian.innerText=xiaoshi;
+	}                                             //到这块我们的函数写完
+	 getTime()                             //我么在输出一下我们的函数值
+	 setInterval(function(){               //循环语句  ，让数字每次都加1000毫秒的循环运行下去
+	 	getTime()                          //再将上面的函数输出写入到这里面就行
+	 },1000)
+	  
+		
+		</script>
+		
+	</body>
+</html>

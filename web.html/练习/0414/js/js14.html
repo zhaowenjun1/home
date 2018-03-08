@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.longBox{
+				width: 600px;
+				height: 150px;
+				border: 1px darkgreen solid;
+				box-sizing: border-box;
+				position: relative;
+				border-radius: 30px;
+				margin: 480px auto;
+				
+			}
+			.Box{
+				width: 150px;
+				height: 100%;
+				background: green;
+				border: 1px darkgray solid;
+				position: absolute;
+				left: 0;
+				transition: all 2000ms  linear; 
+				border-radius: 30px;
+			}
+			.zi{
+				height: 150px;
+				border: 1px #3E3E3E3e solid;
+				padding-left: 200px;
+				transition: ; 
+			
+			
+				text-align: center;
+				line-height: 250px;
+				font-size: 50px;
+				color: black;
+				
+			}
+			
+			.move{
+				background: skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="longBox">
+			<div class="Box"></div><div class="zi" >向右滑动>>>></div>
+		</div>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script>
+			var onOff = 1;
+			
+			
+			$('.Box').click(function(){
+				
+				if(onOff){
+				$('.Box').css('left','448px')
+				$('.Box').addClass('move')
+				
+				//alert("wellcom to mystyle")
+				//var ll = document.getElementsByClassName('mm')
+				//ll.innerText="                            "
+				//console.log(ll)
+				//$('.mm').addClass('mm')
+				onOff=0;
+				}else{
+					$('.Box').css('left','0px')
+					$('.Box').removeClass('move')
+					onOff=1
+				}
+				
+			})
+			$('.zi').click(function(){
+					$(this).css('color','white')
+					
+				})
+		</script>
+	</body>
+</html>

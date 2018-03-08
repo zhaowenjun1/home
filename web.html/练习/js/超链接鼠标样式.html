@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超链接</title>
+		<style>
+			a{
+				font-size: 20px;
+				 font-family: "微软雅黑";
+				font-weight: bold;
+				text-decoration: none; /*underline 下划线 line-through 删除线  none 没有线 */
+				transition: all 2000ms ease 0s;/*补间动画， 生效对象，持续时间，动画模式，延迟。ease 变速动画 
+				                                   linear  匀速动画*/
+			}
+			a:hover{
+				color: #FF0000;
+				text-decoration: overline;
+				cursor: pointer;
+			}
+			a:active{
+				color: brown; /*鼠标点击一瞬间的颜色*/
+			}
+			p{
+				text-align: center;
+				text-indent: 2em;
+				
+				}
+				.zx{
+					border: 2px chocolate solid;
+				}
+				.zz{
+					border: 2px red solid;
+				}
+		</style> 
+	</head>
+	<body>
+		<h1 align="center">互联网</h1>
+		<hr />
+			<p>走着走着，就散了，回忆都淡了；</p>
+			<p>看着看着，<span class="zx">就累了，</span>星光也暗了；</p>
+	     <a href="#"> <p>		<span class="zz">听着听着，就醒了，开始埋怨了；</span> </p></a>
+			<p>回头发现，你不见了，突然我乱了。</p>
+			 <p>  我的世界太过安静，静得可以听见自己心跳的声音。</p>
+			    <p style="cursor: crosshair;">心房的血液慢慢流回心室，如此这般的轮回。</p>
+			   <p style="cursor: wait;">聪明的人，喜欢猜心，也许猜对了别人的心，却也失去了自己的。</p>
+                <p> 傻气的人，喜欢给心，也许会被人骗，却未必能得到别人的。</p>
+              <p>你以为我刀枪不入，我以为你百毒不侵。</p>
+　　
+	
+		<div align="center">
+		<a href ="http://www.baidu.com">点击跳转</a>  </div>
+	</body>
+</html>

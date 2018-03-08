@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="hanshu()">点我</button>
+		<p id="demo">猜数字</p>
+		<script>
+			function hanshu(){
+				var x=5;
+				var z=++x;    //先计算再赋值给z
+				var x=5;      
+				var s=x++;    //先赋值给s 在计算x+1
+				
+			var de=document.getElementById("demo");
+			de.innerHTML="z="+z+",s="+s;  //	原来的p标签的内容会被替换为这里写的内容
+			alert("gameover");
+			}
+			
+		</script>
+	</body>
+</html>

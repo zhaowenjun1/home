@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <style>
+	    	.BB{
+	    		width: 790px;
+	    		height: 340px;
+	    		border: 1px #3e3e3e solid;
+                box-sizing: border-box;	  
+                overflow: hidden;  		
+	    	   
+	    	}
+	    	.B1{
+	    		width: 3950px;
+	    		height: 340px;
+	    		margin-left: 0;
+	    		transition:all 1000ms ease 0;
+	    		
+	            }
+	            img{
+	            	display: block;
+	            	float: left;
+	           
+	            }
+	            
+	    </style>
+	</head>
+	<body>
+    <div class="BB">
+    	<div class="B1">
+    		<img src="../img/58e73aa0Nbd4b09f0.jpg" />
+    		<img src="../img/58e74333Na53b8e8b.jpg" />
+    		<img src="../img/58eb22efNfc384301.jpg" />
+    		<img src="../img/58ed9c26Nc3d8d4e3.jpg" />
+    		<img src="../img/58ef2947N3fb1697e.jpg" />
+    	</div>
+    </div>
+    <script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+    <script>
+    	
+    	var x=0
+    	    var y=1              //定义一个开关，为1是真，则执行
+    	function DIzeng(){
+    		x=x+790
+    		if(x>=0){             //x不符合条件则进入else里去                                      用                                                         y等于1的值继续执行，即条件为真，
+    			y=1
+    		}else{
+    			y=0
+    		}
+    	}
+    	function DIjian(){
+    		x=x-790
+    		if(x<=-3160){
+    			y=0
+    		}else{
+    			y=1
+    		}
+    	}
+    	setInterval(function(){
+    		if(y){
+    			DIjian()
+    		}else{
+    			DIzeng()
+    		}
+    		$('.B1').css('margin-left',x+"px")
+    		//console.log(y)
+    		//x=x-790
+    	},1500)
+//      setInterval(function(){
+//      	if(y){
+//      	
+//      	
+//      $('.B1').css('margin-left',x+"px")
+//      x=x-790
+//      	
+//      	}else{
+//      $('.B1').css('margin-left',x+"px")	
+//      x=x+790
+//     
+//      }
+//      },1500)
+//      
+    </script>
+	</body>
+</html>

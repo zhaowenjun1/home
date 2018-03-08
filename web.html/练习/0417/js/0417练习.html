@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.longbox{
+				width: 400px;
+				height: 200px;
+				border: 1px #3e3e3e solid;
+				box-sizing: border-box;
+				padding: 50px 50px;
+				position: relative;
+			}
+			.mima{
+				display: block;
+				margin: 0 auto;
+				width: 200px;
+				height: 40px;
+			text-align: right;
+			padding-right: 20px;
+				
+				}
+				p{
+					color: red;
+                    font-size: 20px;
+				}
+				button{
+					display: block;
+					width: 80px;
+					height: 30px;
+					position: absolute;
+					bottom: 20px;
+				    
+				  
+				  margin: 0  110px;
+				}
+						
+		</style>
+	</head>
+	<body>
+		<div class="longbox">
+			<input type="password" class="mima" />
+			<p><span></span></p>
+			<button >登陆</button>
+		</div>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script>
+			var A = 12321
+			var cishu = 3
+			var onoff = 1
+			$('button').click(function(){
+	        	var B = $('.mima').val();
+		        if(onoff){
+	           		if(B==''){
+		          		alert('请输入密码')
+		          	}else{
+		          		if(B==A){
+		          			alert(666)
+		          		}else{
+		          			if(cishu<=0){
+		          				$('span').text('没有次数了')
+		          				onoff = 0 
+		          			}else{
+		          				$('span').text('还有次数：'+cishu)
+		          				cishu-=1
+		          			}
+		          		}
+		          	}
+		        }else{
+		        	alert('锁定')
+		        }
+	       }) 
+		</script>
+	</body>
+</html>

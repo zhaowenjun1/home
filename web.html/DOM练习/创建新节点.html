@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*#wo{
+				height: 100px;
+				background: saddlebrown;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="wo">
+			<p id="art">
+				1
+			</p><br /><br />
+			<input type="button" value="点击增加" onclick="han()" />
+			<input type="button" value="颜色" onclick="shu()"/>
+		</div>
+		<script>
+		function han(){
+			var women=document.getElementById("wo");
+			var art1=document.getElementById("art");
+			var xin=document.createElement("p");
+			xin.innerHTML="你好";
+			women.insertBefore(xin,art1);
+		}
+		function shu(){
+			
+			wo.style.background=red;
+		}
+		</script>
+	</body>
+</html>

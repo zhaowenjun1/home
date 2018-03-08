@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a:hover{
+				cursor: pointer;
+			}
+			body{
+				/*background-color:darkolivegreen;*/
+				background:blanchedalmond  ;
+				/*background-image: url(../img/1530445_201312111909250465.gif);*/
+			}
+			.TITLE{
+				height: 100px;
+				border: 1px solid darkcyan;
+				background-color: darkgray;
+				color: forestgreen;
+				
+				padding-top: 20px;
+				/**/
+			}
+			.TITLE1{
+				width: 660PX;
+				height: 100PX;
+				text-align: center;
+				font-weight: bold;
+				line-height: 70PX;
+				letter-spacing: 100px;
+				margin: auto;
+				background: url(../img/6edee48fc3840c1870d51478f877e0e9.png) 0px 60px no-repeat;
+				font-size: 50px;
+				padding-left: 50px;
+			}
+			.header{
+				height: 60px;
+				width:850px ;
+				border: 1px solid green;
+				background-color: brown;
+				margin: auto;
+				padding-top: 10px;
+				padding-left: 160px;
+				
+				border-radius: 10px;
+			}
+			.box5{
+				width: 130px;
+				float: left;
+				font-size: 25px;
+				line-height: 50px;
+			}	
+			.login{
+				
+				width: 300px;
+				height: 60px;
+				float: right;
+				margin-top: -5px;
+				border-left: 5px solid #8FBC8F;
+			}
+			.img1{
+				height: 60px;
+				width: 60px;
+				border-radius: 60px;
+				margin-left: 20px;
+				float: left;
+				background: url(../img/924.png) no-repeat;
+			}
+			.zhuce{
+				height: 60px;
+				line-height: 60px;
+			
+				font-family: "微软雅黑";
+				font-size: 30px;
+				width: 80px;
+				float: right;
+			}
+			.zhuce a{
+				color: slategray;
+				font-weight: 800;
+			}
+			.denglu a{
+				color: slategray;
+				font-weight: 800;
+			}
+			.denglu{
+				height: 60px;
+				line-height: 60px;
+				float: right;
+				font-family: "微软雅黑";
+				font-size: 30px;
+				width: 80px;
+			}
+			.A{
+				text-decoration: none;
+				color: white;
+			}
+		
+			#BOX{
+		        min-height: 1000px;
+				width: 1000px;
+			/*	border: 1px green solid;*/
+				margin: auto;
+				background-image: 
+				background-repeat: no-repeat;
+				/*background-attachment: fixed;*/
+				position: relative;
+				background:blanchedalmond  ;
+				/*border: 1px solid;*/
+			}
+		    h1{
+		    	
+		    	color: tomato;
+		    	font-family: "微软雅黑";
+		    	font-size: 30px;
+		    }	
+			h3{
+				color:chocolate;
+				font-family: "微软雅黑";
+				font-size: 30px;
+			
+			}
+			.box1{
+				text-indent: 2em;
+				margin-top: 20px;
+			}
+			.box2{
+			float: right;	
+			}
+			/*textarea{
+				resize: none;
+				border:2px solid seagreen;
+				background-color:lightgreen;
+				 border-radius: 10px;
+				/* box-shadow:1px 1px 5px 2px green inset;	*/
+				
+			}
+			form{
+				margin-top: 10px;
+			}
+			.clear{
+				clear: both;
+			}
+			
+			textarea{
+				resize: none;
+				border-radius: 10px;
+				border: 2px solid seagreen;
+				text-indent: 2em;
+				font-size: 20px;
+				/*position: relative;
+				left: 50px;*/
+				display: block;
+				margin-top: 8px;
+				height: 250px;
+				padding-top: 5px;
+			}
+			textarea:focus{
+				outline: none;
+			
+			}
+		
+			.kuai{
+				height: 40px;
+				padding-left: 50px;
+				margin-top: 10px;
+				color: green;
+				
+			}
+			.kuai input{
+				display: block;
+				height: 50px;
+			}
+			input{
+				border-radius: 10px;
+				border: 2px green solid;
+			}
+			input:focus{
+				outline: none;
+			}
+			.box7{
+				text-indent: 1em;
+				line-height: 30px;
+			}
+		
+			.P{
+				display: block;
+				padding-left: 50px;
+				height: 50px;
+				width: 500px;
+				
+			}
+			#yanzheng{
+				vertical-align: middle;
+				
+			}
+		
+			.P a{
+				font-size: 15px;
+				text-decoration: none;
+				color: slategray;
+			}
+			.box6{
+				position: relative;
+				left: 555px;
+				margin-right: 50px;
+				height: 50px;
+				width: 80px;
+				font-size: 25px;
+				width: 100px;
+				
+			}
+			.box10{
+				height: 40px;
+				width: 200px;
+				text-indent: 2em;
+			}
+			.tijiao{
+				height: 50px;
+				margin-top: 20px;
+			}
+			.zhuyi{
+				border-top: 1px solid black;
+				padding-top: 20px;
+				margin-top: 30px;
+				padding-left: 30px;
+			}
+			.H2{
+				font-family: "微软雅黑";
+				font-weight: 800;
+				
+			}
+			
+		
+			.LI{
+				padding-top: 20px;
+				font-family: "微软雅黑";
+				line-height: 30px;
+			}
+			#BOX1{
+				height: 30px;
+				
+				
+				
+				font-weight: bold;
+				text-align: center;
+				line-height: 30px;
+				background-color: darkseagreen;
+			}
+			.pp{
+				text-align: center;
+			}
+			.end{
+				text-align: center;
+				font-size: 20px;
+				
+			}
+			a{
+				text-decoration: none;
+			}
+			.box6:hover{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="TITLE">
+			<div class="TITLE1">树洞</div>
+		</div>
+		<div class="header">
+			<div class="box5"><a class="A" href="http://www.1ting.com/" target="_blank">来点音乐</a></div>
+			<div  class="box5"><a class="A" href="http://dianying.2345.com/" target="_blank">看会电影</a></div>
+			<div  class="box5"><a class="A" href="https://www.jd.com/" target="_blank">随便逛逛</a></div>
+			<div  class="box5"><a class="A" href="发表网页.html" >我要发帖</a></div>
+			<div class="login">
+				<div class="img1"></div>
+				<div  class="zhuce"><a href="注册页面.html">注册</a></div>
+				<div class="denglu"><a href="登陆页面.html">登陆</a></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="potho">
+			
+			<div id="BOX">
+				<div class="box1">
+					<h1>这里是你倾诉的港湾</h1>
+					
+				</div>
+				<div class="box2">
+					<h3>世界很大，我们都需要一个拥抱。</h3>
+					
+				</div>
+				<div class="clear"></div>
+				<form action="506897374@qq.com" method="post">
+					
+					<img src="../img/191121509187547105.gif" height="30px" width="100px"/>
+					<input class="box10" type="text" placeholder="标题" />
+					<textarea name="enter" rows="10" cols="90" required="required" placeholder="内容"></textarea> 
+					<br />
+					<input class="kuai" style=" border: none;" type="file" /><br />
+					
+				<div class="P">	验证码：
+					<input class="box7" type="text"  />
+					<img id="yanzheng" src="../img/50.png"  /> &nbsp;
+					<a class="shuaxin" href="#"> 点击刷新</a></div>
+					<div class="tijiao">
+					<p></p><input class="box6" type="submit"  value="发表"/>
+					<input class="box6" type="reset" value="取消" /></p>
+					</div>
+					
+				</form>
+			<div class="zhuyi">
+				
+				<h2 class="H2">发帖须知</h2>
+				<ol class="LI" type="1">
+					<li>秘密经审核后发布</li>
+					<li>请不要传播淫秽色情内容</li>
+					<li>请勿发布广告或留下自己联系方式</li>
+					<li>请至少输入5字以上</li>
+				</ol>
+			</div>
+			</div>
+		</div>	
+		<div class="end">
+			<a href="#">关于树洞&nbsp;|&nbsp;</a><a href="#">建议意见&nbsp;|&nbsp;</a><a href="#">请求删帖&nbsp;|&nbsp;</a><a href="#">树洞空间</a> </div>
+			<div id="BOX1">
+					
+				这里没有尔虞我诈，没有虚伪的面具，只有真实的自己。记住，你就是你，不一样的烟火。
+			    </div>
+			   
+			</div>
+			 <p class="pp">以上内容归版权所有者所属  &copy;</p>
+		</div>
+		
+	</body>
+</html>

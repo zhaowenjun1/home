@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				font-size: 30px;
+			}
+			#A{
+				position: relative;
+				height: 500px;
+				width: 300px;
+				border: 3px solid;
+				padding-left: 40px;
+				background: mediumturquoise;
+			}
+			.B{
+				
+				background: red;
+			}
+			.C{
+				display: none;
+				
+				background: salmon;
+			}
+			.D{
+				background: cadetblue;
+			}
+			.E{
+				display: none;
+				background: blueviolet;
+			}
+			.z{
+				background: hotpink;
+			}
+			.z1{
+				display: none;
+				background:khaki;
+			}
+			.aa{
+				background: chocolate;
+			}
+			.aa1{
+				display: none;
+				background: teal;
+			}
+			.xuanxiang1{
+				background: slategrey;
+				display: none;
+			}
+			.xuanxiang2{
+				background: tomato;
+				display: none;
+			}
+		</style>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".B").click(function(){
+					$(".C").slideToggle(1000) ;
+				});
+				$(".D").click(function(){
+					$(".E").fadeToggle(1500);
+				});
+				$(".z").click(function(){
+					$(".z1").slideToggle(1000);
+				});
+				$(".aa").mouseenter(function(){
+					$(".aa1").slideToggle(1000);
+					
+				});
+//				$(".aa").mouseleave(function(){
+//					$(".aa1").slideToggle(1000);
+//				});
+				$(".aa1").mouseup(function(){
+					$(".xuanxiang1").slideToggle(1000);
+				});
+				$(".xuanxiang1").mouseup(function(){
+					$(".xuanxiang2").slideToggle(1000);
+				});
+				$(".dianji").click(function(){
+					
+					$("#A").animate({"left":300},1000);
+					$("#A div").animate({height:'200px',left:'200px'},1000).animate({height:'60px',left:'100px',opacity:'0.2'},"slow").hide(1000);
+				});
+				
+				$(".stop1").click(function(){   
+					$("#A").stop();	
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<button class="dianji">点击</button>
+		<button class="stop1">停止</button>
+		<div id="A">
+			<div class="B">
+			点击向下移动	
+			</div>
+			<div class="C">
+				hello
+			</div>
+			<div class="D">
+				点击切换淡入淡出
+			</div>
+			<div class="E">
+				点击效果淡入淡出
+			</div>
+			<div class="z">
+				点击切换
+			</div>
+			<div class="z1">
+				点击效果切换
+			</div>
+			<div class="aa">
+				鼠标效果
+			</div><div class="aa1">
+				下拉
+			</div>
+			<div class="xuanxiang1">
+				aaa
+			</div><div class="xuanxiang2">
+				bbb
+			</div>
+		</div>
+	</body>
+</html>

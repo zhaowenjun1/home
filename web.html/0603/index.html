@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var X="";
+			var myDate=new Date().getDay();
+			switch (myDate) {           // 判断星期
+				case 6:
+					 A="今天星期"+myDate
+//					console.log("今天是星期"+X);
+					break
+				default:
+					 A="今天天气很好！"
+					break
+					
+			}
+
+			document.write(A)
+			var Hour=new Date().getHours();
+			if (myDate<10) {
+				D="并且是上午"+Hour+"点"+"--------How are you-----------";
+			}else{
+				D="该吃饭了"
+			}
+//			prompt("请输入密码");
+			document.write(D)
+		</script>
+	</body>
+</html>

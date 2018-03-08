@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>控制台</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			header{
+				width: 100%;
+				height: 60px;
+				background: #202328;
+			}
+			h1{
+				line-height: 60px;
+				padding-left: 10px;
+				height: 60px;
+				float: left;           /*h1 也要浮动 才能让后面的块也浮动*/
+				
+			}
+			h1 a{                     
+				color: #00bee3;
+				text-decoration: none;
+				float: left;
+			}
+			span{
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-right: 1px #fff solid;
+				border-bottom: 1px #fff solid;
+				float: left;
+				transform: rotate(45deg);
+				margin: 25px 0 0 10px ;
+				
+   			}
+   			.BOX{
+   				width: 1000px;
+   				height:60px;
+   				float: right;
+   			}
+   			.input_1{
+   				border: 0;   /*去掉边框线*/
+                width: 360px;
+   				height:60px;
+                float: left;
+               font-size: 15px;
+               padding-left: 15px;
+               color: #fff;
+   				background:url(../img/search.png) right 5px no-repeat #33383c;
+   				font-style: italic;
+   			}
+   			.input_1:focus{          /* 点击输入框时取消蓝框显示*/
+   				outline: none;
+   			}
+   			.input_1::-webkit-input-placeholder{       /*不点击时输入框里显示的提示信息样式----颜色*/
+   				color: gray;
+   			}
+   			
+   			img{
+   				border: 1px gray solid;
+   				float: left;   			
+   				height: 58px;
+   				}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><a href="#">Microsoft Azure</a></h1>
+			<span></span>
+			<div class="BOX">
+				<input type="text" class="input_1"  placeholder="Search resources"/>
+				<div>
+				<a href="#"><img src="../img/btn_1.png" /></a>
+				<a href="#"><img src="../img/btn_2.png" /></a>
+				<a href="#"><img src="../img/btn_3.png" /></a>
+				<a href="#"><img src="../img/btn_4.png" /></a>
+				</div>
+				
+			</div>
+		</header>
+	</body>
+</html>

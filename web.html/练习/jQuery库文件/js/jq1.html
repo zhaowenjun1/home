@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style>
+		h1{
+			text-align: center;
+		}
+		.woo{
+			width: 600px;
+			border: 1px solid;
+			margin: 15px auto;
+			padding-bottom: 20px;
+		}
+		.bt{
+			width: 300px;
+			height: 20px;
+			border: 1px black solid;
+			padding-top: 10px;
+			padding-left: 10px;
+		
+			cursor: pointer;
+			margin: 20px auto;
+			
+		}
+		.btn{
+			color: red;
+			border-color: red;
+		}
+		
+		.bttn{
+			width: 100px;
+		margin: 0 auto;
+		float: left;
+		margin-left: 200px;
+		}
+		.bttn1{
+			
+		}
+		.Rig{
+			background: green;
+			color: aliceblue;
+		}
+		.Wro{
+			background: red;
+			color: aliceblue;
+		}
+	</style>
+		
+			
+		
+	</head>
+	<body>
+		
+			<h1>which word means 'stupid' in Chinese?</h1>
+			<div class="woo">
+		<div class="bt">A.128</div>
+		<div class="bt">B.250</div>
+		<div class="bt">C.360</div>
+		<div class="bt">D.523</div> </div>
+		    <div class="bttn">
+			     <button >提交</button></div>
+			   <div class="bttn1">  <button>取消</button>
+		   
+		</div>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script>
+			var NUM = 0  // 给个全局变量，可以去接受第一个函数里的局部命令，也可以用在默认效果上
+			var SHUZI = 2   //给一个确定的选项序号
+			
+			$('.bt').click(function(){   //当点击块bt时，执行函数里的js语句
+				NUM = $(this).index()+1;   //用上面的全局变量来接收这个函数里的命令结果
+				//console.log(NUM)
+				$(this).addClass('btn').siblings().removeClass('btn'); //为被点击的那个块添加一个css样式，而同级的其他元素则移除那个css样式。
+			})
+			$('.bttn').click(function(){   //当点击按钮时，执行另一个函数
+				if(NUM==0){           //再写一个if语句，如果没有选择答案，会弹出框提示
+					alert("请选择答案")
+				}else{
+				if(NUM==SHUZI){     //这里需要一个if判断语句，判断当点击是正确值时显示css样式，
+					$('.btn').addClass('Rig')
+					
+				}
+				else {                        //如果点击的不是正确选项的序号，则为这个错误选项块执行另一个css样式，然后再让正确选项显示正确值时所执行的css样式。
+					$('.btn').addClass('Wro')
+					$('.bt:nth-child('+SHUZI+')').addClass('Rig')
+				
+				}
+				}
+			})
+			$('.bttn1').click(function(){     //当点击取消按钮时会清除所选的选项答案
+				$('.btn').removeClass('btn')
+			})
+		</script>
+	</body>
+</html>

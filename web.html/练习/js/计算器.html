@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			 *{
+				margin: 0;
+				padding: 0;
+			}  
+		body{
+			background: black;
+		}
+			
+			.box0{
+				width: 160px;
+			 min-height: 250px;
+				border: 1px #3E3E3E solid;
+				margin: 20px auto 0;
+				background: url(../img/111.jpg) no-repeat center;
+			}
+			
+			.box1{
+				height: 70px;
+				border: 1px #3E3E3E solid;
+				position: relative;  /* 将这个块设为相对定位，即给大容器设，为了方便这个块里面的块定位*/
+			
+			}
+			p{
+				display: block;
+				width: 110px;
+				height: 30px;
+				border: none; /* 将边框线显示框取消掉*/
+				position: absolute;/*将这个块设为相对定位，参照物为外面的大容器*/
+				right: 5px;
+				top: 20px;
+				
+			}
+			.box2{
+			
+				
+			text-align: right;
+			box-sizing: border-box; /* 盒子模型中实现内填充，不会改变外面容器大小*/
+		padding-right: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		   }
+		.anniu{
+			width: 20px;
+		}
+			.box3{
+			height: 60px;
+			box-sizing: border-box; /*盒子模型中实现内填充，不会改变外面容器大小*/
+			padding-top: 8px;  /**/
+				
+				
+			}
+	
+		</style>
+	</head>
+	<body>
+		<div class="box0">
+			<div class="box1"><p id="jieguo"></p></div>
+            
+				<div class="box3">
+					
+					<button onclick="fuzhi1(1)">1</button >  
+                         <!--将下面第一次赋值的函数调用给第一块数字块里每个数字，-->
+					<button onclick="fuzhi1(2)">2</button>
+					<button onclick="fuzhi1(3)">3</button>
+					<button onclick="fuzhi1(4)">4</button>
+					<button onclick="fuzhi1(5)">5</button>
+					<button onclick="fuzhi1(6)">6</button>
+					<button onclick="fuzhi1(7)">7</button>
+					<button onclick="fuzhi1(8)">8</button>
+					<button onclick="fuzhi1(9)">9</button >
+					<button onclick="fuzhi1(0)">0</button>
+				
+			</div>
+			<hr />
+			<div class="box3">
+					
+					<button onclick="fuzhi2(1)">1</button >
+					<button onclick="fuzhi2(2)">2</button>
+					<button onclick="fuzhi2(3)">3</button>
+					<button onclick="fuzhi2(4)">4</button>
+					<button onclick="fuzhi2(5)">5</button>
+					<button onclick="fuzhi2(6)">6</button>
+					<button onclick="fuzhi2(7)">7</button>
+					<button onclick="fuzhi2(8)">8</button>
+					<button onclick="fuzhi2(9)">9</button >
+					<button onclick="fuzhi2(0)">0</button>
+				
+			</div>
+			<hr />
+			 <div class="box2">	
+             <button class="anniu"  onclick="jia(x,y)"> + </button>
+             	    <button class="anniu" onclick="jian(x,y)">-</button>
+					<button  class="anniu" onclick="cheng(x,y)">*</button>
+					<button  class="anniu" onclick="chu(x,y)">/</button>
+					<button  class="anniu" onclick="qingchu(x,y)">C</button>
+                            <!-- 调用函数，实现当点击相应按钮时出现的函数所对应的值  -->
+			</div>
+			<hr />
+		</div>
+		<script>
+			var x,y=0;
+			function fuzhi1 (a) {
+				x=a
+	           }
+			function fuzhi2 (a) {
+				y=a
+	           }
+			function qingchu () {
+				var jieguo=document.getElementById('jieguo');  // 获取上面id为jieguo的内容，
+				                                                  //  然后修改为我们要输出的值
+				jieguo.innerText=0;
+				x=0
+				y=0
+			}
+			function jia (a,b) {
+				var jieguo=document.getElementById('jieguo');
+				jieguo.innerText=a+b;
+			}
+			function jian(a,b) {
+				var jieguo=document.getElementById('jieguo');
+				jieguo.innerText=a-b;
+			}
+			function cheng(a,b) {
+				var jieguo=document.getElementById('jieguo');
+				jieguo.innerText=a*b;
+			}
+			function chu (a,b) {
+				var jieguo=document.getElementById('jieguo');
+				jieguo.innerText=a/b;
+			}
+			
+		</script>
+	</body>
+</html>

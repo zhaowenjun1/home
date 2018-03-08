@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			.one{
+				width: 30px;
+				height: 30px;
+				background: #DDDDDD;
+				border: 1px black solid;
+				float: left;
+				margin-left: 10px;
+				border-radius: 15px;
+			}
+			.one1{
+				background: red;
+			}
+			.onee{
+				background: none;
+			}
+			span{
+				padding-left: 50px;
+			
+			}
+			
+			.fenshu{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<script>
+			var sum = 0;
+			for(i=1;i<51;i++){
+				sum = sum + i;
+			}
+			console.log(sum);
+			alert('相加和为:'+sum)
+		</script>-->
+	<div>
+		<div class="one"></div>
+		<div class="one"></div>
+		<div class="one"></div>
+		<div class="one"></div> 
+	</div>	
+		
+		<div class="fenshu">
+		<span>0</span>.0分
+		</div>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script>
+			 var N = 1
+			 
+			
+			$('.one').click(function(){
+				var n = $(this).index()+1
+				$('.one').removeClass('one1')  //清除类效果之后再循环执行,再点击块时会重新刷新再显示要添加的效果.
+				for(i=1;i<=n;i++){
+					
+				
+				$('.one:nth-child('+i+')').addClass('one1')	
+			}
+			//alert( n+"分"	)
+			$('span').text(n)
+			})
+			console.log(n)
+			
+		</script>
+	</body>
+</html>

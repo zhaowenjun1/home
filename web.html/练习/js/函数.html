@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var num = 30;           //全局变量
+			function suan (x,y) {
+				var res = (x+y+num);  //局部变量
+				alert('那都不是事');
+				return res;               //返回值
+			}
+			var he = suan(10,20);      //用定义一个he变量来接受返回值
+			console.log(he)
+		</script>
+		  
+		  
+	</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#top{
+				height: 90px;
+				min-width:1290px ;
+				background-color: black;
+			}
+			.top_cnter{
+				height: 90px;
+				width: 1240px;
+				background-color: black;
+				margin: auto;
+				/*border: 1px  white solid;*/
+			}
+			.lol-photo{
+				height: 80px;
+				width: 150px;
+				float: left;
+				
+			}
+			.box1{
+				height: 90px;
+				width: 660px;
+				float: left;
+			}
+			.UL{
+				display: block;
+				float: left;
+				height: 90px;
+			
+			}
+			.LI{
+				height: 90px;
+				width: 90px;
+				float: left;
+				padding-left: 10px;
+				
+			}				
+			.LI a{
+				display: block;
+				width: 90px;
+				height: 50px;
+				text-decoration: none;
+				font-size: 20px;
+				color: white;
+				text-align: center;
+				font-weight: 400;
+				
+				padding-top: 20px;
+			}
+			.LI span{
+				font-family: tahoma;
+				font-size: 15px;
+				color: gray;
+			}
+			.box2{
+				height: 80px;
+				width: 70px;
+				float: left;
+				padding-top: 5px;
+				/*background:url(img/b.png) no-repeat;*/
+			}
+			.box3{
+				height: 80px;
+				width: 80px;
+				
+				float: left;
+				padding-top: 5px;
+			}
+			#top-right{
+				height: 90px;
+				width: 425px;
+				background: black;
+				float: right;
+			}
+			.box4{
+				height: 80px;
+				width: 130px;
+				padding-top: 10px;
+				/*background: url(img/g.png) no-repeat;*/
+				float: left;
+			}
+			.box5{
+				height: 40px;
+				width: 280px;
+				float: left;
+				padding-top: 20px;
+				color: white;
+			}
+			.box5 a{
+				color: chocolate;
+				text-decoration: none;
+			}
+			.box5 span{
+				font-family: tahoma;
+				font-size: 10px;
+			}
+			#dongtai{
+				height: 520px;
+				min-width: 1240px;
+				/*background:
+				url(http://desk.fd.zol-img.com.cn/t_s1280x800c5/g5/M00/02/06/ChMkJ1bKyiaIJrOvABxK7aFB7Q0AALIXgC_TtQAHEsF059.jpg)  no-repeat;*/
+				/*margin: auto;*/
+				font-size: 50px;
+				color: red;
+				font-weight: 900;
+				font-family: tahoma;
+				text-align: center;
+				/*padding-top: 20px;*/
+				background: url(img/6.jpg);
+			}
+		
+			#dongtai a{
+				text-decoration: none;
+				color: firebrick;
+			}
+			#dongtai a:hover{
+				color: indigo;
+				transition: all 2000ms ease; 0s;  /*补间动画*/
+			}
+			#long{
+				min-width:1290px ;
+				height: 50px;
+				background:  gainsboro;
+				line-height: 50px;
+			}
+			.box6{
+				height: 40px;
+				width: 1240px;
+				margin: auto;
+			}
+			.box7{
+				width: 200px;
+				float: left;
+				padding-left: 10px;
+				font-size: 20px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				line-height: 56px;
+			}
+			.box7 a{
+				text-decoration: none;
+				color: black;
+			}
+			.box7 a:hover{
+				color: sandybrown;
+			}
+			#A{
+				width:1240px ;
+				min-height:1250px ;
+				margin: auto;
+			/*	border: 1px solid;*/
+			}
+			.box8{
+				height:330px ;
+				width: 1240px;
+				background:url(img/lol.png) no-repeat; 
+				position: relative;
+				margin-top: 20px;
+			}
+			.box9{
+				width: 680px;
+				height: 50px;
+				background: black;
+				position: absolute;
+				bottom: 0px;
+			}
+			.box9 a{
+				color: white;
+				font-size: 15px;
+				text-decoration: none;
+				line-height: 50px;
+				padding-left: 25px;
+				font-family: "微软雅黑";
+				
+				
+			}
+			.box9 a:hover{
+				color: darkorange;
+			}
+			#xiazai{
+				height: 100px;
+				width: 470px;
+				
+				float: right;
+				
+			}
+			.aox1{
+				height: 230px;
+				width: 470px;
+				position: absolute;
+				bottom: 1px;
+				right: 0px;
+				
+			}
+			.aox1 a{
+				display: block;
+				height: 50px;
+				width: 150px;
+				float: left;
+				text-align: center;
+				line-height: 55px;
+				text-decoration: none;
+				color: black;
+				font-family: tahoma;
+				
+				background: url(img/f.png) no-repeat ;
+				margin-top: 8px;
+				margin-left: 5px;
+				
+			} 
+			.aox1 a:hover{
+				background: darkgrey;
+				border-radius: 10px;
+				color: antiquewhite;
+			}
+			.aox2{
+				width: 680px;
+				height: 150px;
+				border-bottom: 3px solid whitesmoke;
+				float: left;
+			
+			}
+			.font1{
+				width: 130px;
+				height: 80px;
+				font-size: 30px;
+				font-weight: 500;
+				font-family: "微软雅黑";
+				margin-top: 70px;
+				line-height: 110px;
+				
+				float: left;
+			}
+			.font2{
+				height: 150px;
+				width: 530px;
+				float: right;
+				text-align: center;
+				line-height: 270px;
+				font-size: 25px;
+			
+			}
+			.aox3 li{
+				height: 150px;
+				display: block;
+				float: left;
+				padding-left: 20px;
+			}
+			.aox3 a{
+				text-decoration: none;
+				color: black;
+			}
+			.aox3 a:hover{
+				color: darkgoldenrod;
+				border-bottom: 2px solid;
+			}
+			.aox4{
+				float: right;
+				width: 470px;
+				height: 150px;
+				/*border-bottom: 3px whitesmoke solid;*/
+				
+			}
+			.aox4 li{
+				display: block;
+				width: 150px;
+				height: 150px;
+				float: left;
+				line-height: 270px;
+				font-size: 20px;
+			}
+			 a {
+				text-decoration: none;
+			}
+			.aox4 a:hover{
+				color: darkgreen;
+				border-bottom: 2px solid;
+			}
+			.creal{
+				clear: both;
+			}
+			.aox5{
+				width: 680px;
+				height: 600px;
+				
+				margin-top: 20px;
+			}
+			.aox5 span{
+				display: block;
+				height:50px ;
+				width: 400px;
+				float: right;
+				
+			}
+			.STY{
+				font-size: 30px;
+				font-weight: bold;
+				padding-top: 20px;
+				font-family: "微软雅黑";
+			}
+			.STY1{
+				font-size: 15px;
+				text-indent: 2em;
+				color: slategray;
+				font-family: tahoma;
+				font-weight: 400;
+			}
+			.aox5 li{
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				
+			}
+			.aox5 span{
+				display: block;
+				
+			}
+			
+			.biao{
+				/*background: saddlebrown;*/
+			}
+			.biao1{
+				height: 45px;
+				/*background: darkblue;*/
+				margin-top: 15px;
+			}
+			.gongao{
+				float: left;
+				width: 90px;
+				height: 45px;
+				background: silver;
+				font-size: 25px;
+				text-align: center;
+				line-height: 45px;
+				font-family: tahoma;
+				font-weight: 300;
+			
+			}
+			.caomei{
+				float: left;
+				width: 500px;
+				height: 45px;
+				/*background: teal;*/
+				font-size: 22px;
+				padding-left: 20px;
+				line-height: 45px;
+				font-family: tahoma;
+				font-weight: 300;
+			}
+			.riqi{
+				float: right;
+				width:60px ;
+				height: 45px;
+				text-align: right;
+				line-height: 45px;
+				/*background: darkgoldenrod;*/
+				font-size: 18px;
+				
+			}
+			.biao1 a{
+				color: black;
+				
+			}
+			.biao1 a:hover{
+				color: #D2691E;
+			
+			}
+			.aox6{
+				width: 500px;
+				height: 580px;
+				/*background: seagreen;*/
+				float: right;
+				position: relative;
+				top: -620px;
+			}
+			.tupian{
+				width: 220px;
+				height: 100px;
+				float: left;
+				margin-top: 15px;
+				margin-left: 15px;
+				/*margin-right: 10px;*/
+			}
+			.aox7{
+				width: 680px;
+				height: 50px;
+				background: lightgrey;
+				font-size: 30px;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+			}
+			.aox8{
+				width: 460px;
+				height: 80px;
+				position: relative;
+				top: -80px;
+				right: -755px;
+			}
+			.end{
+				width: 1240px;
+				height: 50px;
+				/*background: saddlebrown;*/
+				margin: auto;
+			}
+			.shipin a{
+				color: black;
+				font-size: 30px;
+				font-weight: 400;
+				padding-left: 10px;
+				
+			}
+			#end1{
+				width: 1240px;
+				height: 150px;
+				background: salmon;
+				margin: auto;
+			}
+			/*.end2{
+				width: 180px;
+				height: 130px;
+				float: left;
+			}*/
+			.aa{
+				display: block;
+				width: 180px;
+				height: 130px;
+				float: left;
+			}
+			.end img{
+				position: relative;
+				top: -360px;
+			}
+				
+			
+			.ll{
+				position: relative;
+				/*top: -250px;*/
+				display: block;
+				margin: auto;
+			}
+			h3 a{
+				display: block;
+				width: 1000px;
+				height: 60px;
+				margin: auto;
+				position: relative;
+				top: 215px;
+				text-align: center;
+				font-size: 30px;
+				padding-left: 500px;
+				color: cadetblue;
+			}
+		</style>
+			
+	</head>
+	<body>
+		<div id="top">
+			<div class="top_cnter">
+				<div class="box1">
+				<div class="lol-photo">
+					<img src="img/c.png" height="90px" width="150px"/>
+				</div>
+				
+				<ul class="UL">
+					<div class="LI">
+						<li style="list-style: none;" >
+							<a href="#" target="_blank" >游戏资料
+							<span>english</span>	
+							</a>
+							
+						</li>
+					</div>
+					<div class="LI"><li style="list-style: none;">
+						<a href="#" target="_blank" title="论坛">论坛中心<span>english</span>	</a>
+					</li>
+					</div>
+					<div class="LI">
+						<li style="list-style: none;">
+							<a href="#" target="_blank" >赛事中心<span>english</span>	</a>
+						</li>
+					</div>
+					<div class="LI">
+						<li style="list-style: none;">
+							<a href="#" target="_blank" >道具商城<span>enlish</span>		</a>
+						</li>
+					</div>
+					<div class="LI">
+						<li style="list-style: none;">
+							<a href="#" target="_blank" >自助体验<span>english</span>	</a>
+						</li></div>
+				</ul>
+				
+				</div>
+				<div class="box2">
+					<a href="#"><img src="img/b.png" height="80px" width="80"px/></a>
+				</div>
+				<div class="box3">
+					<a href="#"><img src="img/a.png" width="80px" height="80px" /></a>
+				</div>
+					<div class="box4">
+						<a href="#"><img src="img/g.png" height="70px" width="70px"/></a>
+					</div>
+					<div class="box5">
+						<p>亲爱的用户，欢迎&nbsp;<a href="#">登陆</a></p>
+						<span>登陆后查看自己的战绩，资产，声望。</span>
+					</div>
+				</div>
+				</div>
+				
+		</div>
+		<div id="dongtai">
+			<br>
+			<p>你瞅啥</p>
+			<br>
+			<p>瞅你咋地</p>
+			<!--<img src="img/tmg.jpg" width="1900px" height="569px"/>-->
+		</div>
+		<div id="long">
+			<div class="box6">
+				<div class="box7">
+					<a href="#">综合资讯</a>
+				</div>
+				<div class="box7">
+					<a href="#">视频中心</a>
+				</div>
+				<div class="box7">
+					<a href="#">赛事中心</a>
+				</div>
+				<div class="box7">
+					<a href="#">活动中心</a>
+				</div>
+			</div>
+		</div>
+		<div id="A">
+			
+			<div class="box8">
+				<div class="box9">
+				<span >
+					<a href="#" target="_blank">520表白大作战</a>
+				</span>
+				<span >
+					<a href="#" target="_blank">LPL战点重燃</a>
+				</span>
+				<span >
+					<a href="#" target="_blank">2017季中狂欢</a>
+				</span>
+			
+				<span >
+					<a href="#" target="_blank">英雄重做介绍</a>
+				</span>
+				<span >
+					<a href="#" target="_blank">特价折扣抢先</a>
+				</span>
+				</div>
+				<div id="xiazai">
+					<img src="img/T.png" height="100px" width="470px"/>
+				</div>
+				<div class="aox1">
+					<a href="#"> <span>新手推荐</span></a>
+					<a href="#"> <span>宇宙官网</span></a>
+					<a href="#"> <span>资料查询</span></a>
+					<a href="#"> <span>周边商城</span></a>
+					<a href="#"> <span>新客户端</span></a>
+					<a href="#"> <span>峡谷之颠</span></a>
+					<a href="#"> <span>CDK兑换</span></a>
+					<a href="#"> <span>领奖中心</span></a>
+					<a href="#"> <span>官方微博</span></a>
+					<a href="#"> <span>在线客服</span></a>
+					<a href="#"> <span>飞升模式</span></a>
+					<a href="#"> <span>意见论坛</span></a>
+				</div>
+			</div>
+			<div class="aox2">
+				<div class="font1">
+					最新资讯
+				</div>
+				<div class="font2">
+					<ul class="aox3">
+						<li>
+							<a href="#">新闻综合</a>
+						</li>
+						<li>
+							<a href="#">官方公告</a>
+						</li>
+						<li>
+							<a href="#">战术资料</a>
+						</li>
+						<li>
+							<a href="#">更新公告</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="aox4">
+				<ul>
+					<li>
+						<a href="#">周免英雄</a>
+					</li>
+					<li>
+						<a href="#">周免英雄</a>
+					</li>
+					<li>
+						<a href="#">周免英雄</a>
+					</li>
+				</ul>
+			</div>
+			<div class="creal"></div>
+			<div class="aox5">
+				<img src="img/timg.gif" width="250px" height="130px"/>
+				<span class="STY"> 新版客户端解决方案<hr />
+				<span class="STY1">我们希望给召唤师带来耳目一新的感受。同时，重建了核心技术，使客户端更加可靠、减少错误。</span></span>
+				<div class="biao" >
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#">草莓若风再度联手 出战峡谷巅峰对决</a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#">风萧萧兮易水寒，壮士一去不复还</a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#"> LPL夏季赛赛程公布揭幕战RNG战OMG </a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#">峡谷之巅”预赛季此前于4月17日开启预赛季</a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#">想要在在“峡谷之巅”占据一席之地，唯有战斗。</a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#">德玛西亚杯总决赛即将来临</a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					<div class="biao1">
+						<div class="gongao">
+							<a href="#">公告</a>
+						</div>
+						<div class="caomei"><a href="#">你准备好了么！</a></div>
+						<div class="riqi"><a href="#">06/02</a></div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="aox6">
+				<div class="tupian">
+					<img src="img/lolaa.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolaa.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolll.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolaa.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolll.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolaa.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolaa.png" width="220px" height="100px"/>
+				</div>
+				<div class="tupian">
+					<img src="img/lolll.png" width="220px" height="100px"/>
+				</div>
+				<div
+					class="tupian">
+			<img src="img/6.png" width="455px" height="80px"/></div>
+				</div>
+				<div class="aox7">
+				<a href="#">阅读更多最新资讯</a>
+			</div>
+			<div class="aox8">
+				<img src="img/5.png" width="460px" height="80px"/>
+			</div>
+			</div>
+			
+		</div>
+		<div class="end">
+			<div class="shipin">
+				<a href="#">最新推荐</a>
+				<a href="#">最新推荐</a>
+				<a href="#">最新推荐</a>
+			</div>
+		
+			<div class="end2">
+				<img src="img/170604170406.png"/>
+			</div>
+		</div>		
+		<h3><a href="#">更多资讯欢迎来电访问,我们竭诚为你服务</a></h3>
+			<img class="ll" src="img/04165154.png" width="1900px" height="200px"/>
+		
+	</body>
+</html>

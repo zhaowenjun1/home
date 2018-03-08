@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.buttond{
+				color: lawngreen;
+				background:azure;
+				border: none;
+			}
+		</style>
+	</head>
+	
+		<button>点击</button><button>点击</button><button>点击</button><button>点击</button>
+		
+	<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+	<script>
+	$('button').click(function(){
+		$(this).addClass('buttond').siblings().removeClass('buttond');
+		
+	    
+        	})
+
+	
+	</script>
+</html>

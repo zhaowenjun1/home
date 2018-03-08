@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a:hover{
+				cursor: pointer;
+			}
+			body{
+				/*background-color:darkolivegreen;*/
+				background:blanchedalmond  ;
+				/*background-image: url(../img/1530445_201312111909250465.gif);*/
+			}
+			.TITLE{
+				height: 100px;
+				border: 1px solid darkcyan;
+				background-color: darkgray;
+				color: forestgreen;
+				
+				padding-top: 20px;
+				/**/
+			}
+			.TITLE1{
+				width: 660PX;
+				height: 100PX;
+				text-align: center;
+				font-weight: bold;
+				line-height: 70PX;
+				letter-spacing: 100px;
+				margin: auto;
+				background: url(../img/6edee48fc3840c1870d51478f877e0e9.png) 0px 60px no-repeat;
+				font-size: 50px;
+				padding-left: 50px;
+			}
+			.header{
+				height: 60px;
+				width:850px ;
+				border: 1px solid green;
+				background-color: brown;
+				margin: auto;
+				padding-top: 10px;
+				padding-left: 160px;
+				
+				border-radius: 10px;
+			}
+			.box5{
+				width: 130px;
+				float: left;
+				font-size: 25px;
+				line-height: 50px;
+			}
+			.login{
+				
+				width: 300px;
+				height: 60px;
+				float: right;
+				margin-top: -5px;
+				border-left: 5px solid #8FBC8F;
+			}
+			.img1{
+				height: 60px;
+				width: 60px;
+				border-radius: 60px;
+				margin-left: 20px;
+				float: left;
+				background: url(../img/a222.jpg) no-repeat;
+			}
+			.zhuce{
+				height: 60px;
+				line-height: 60px;
+			
+				font-family: "微软雅黑";
+				font-size: 30px;
+				width: 80px;
+				float: right;
+			}
+			.zhuce a{
+				color: seashell;
+				font-weight: 800;
+			}
+			.denglu a{
+				color: beige;
+				font-weight: 800;
+			}
+			.denglu{
+				height: 60px;
+				line-height: 60px;
+				float: right;
+				font-family: "微软雅黑";
+				font-size: 30px;
+				width: 80px;
+			}		
+			.A{
+				text-decoration: none;
+				color: black;
+				font-weight: 600;
+			}
+		
+			#BOX{
+		        min-height: 1900px;
+				width: 1000px;
+			/*	border: 1px green solid;*/
+				margin: auto;
+				background-image: 
+				background-repeat: no-repeat;
+				/*background-attachment: fixed;*/
+				position: relative;
+				background:blanchedalmond  ;
+				/*border: 1px solid;*/
+			}
+		    h1{
+		    	
+		    	color: darkcyan;
+		    	font-family: "微软雅黑";
+		    	font-size: 30px;
+		    }	
+			h3{
+				color: #228B22;
+				font-family: "微软雅黑";
+				font-size: 30px;
+			}
+			.box1{
+				text-indent: 2em;
+				margin-top: 20px;
+			}
+			.box2{
+			float: right;	
+			}
+			/*textarea{
+				resize: none;
+				border:2px solid seagreen;
+				background-color:lightgreen;
+				 border-radius: 10px;
+				/* box-shadow:1px 1px 5px 2px green inset;	*/
+				
+			}
+			form{
+				margin-top: 5px;
+			}
+			.clear{
+				clear: both;
+			}
+			.timebox{
+				height: 400px;
+				width: 300px;
+				/*border: none;      将边框线条取消显示*/   
+				border: 1px #3e3e3e solid;
+				float: left;
+			  margin-top: 0px;
+			  border-radius: 30px;
+			  background: url(../img/437075176464751699.jpg) no-repeat  -66px -200px; /*设置图片位置 x轴上多远，和y轴上多远*/
+			  
+			  
+			}
+			.lunbo{
+				width: 640px;
+				height: 400px;
+				float: right;
+				margin-top: 78px;
+			
+				overflow: hidden;
+				position: relative;
+			}
+			.lunbo img{
+				overflow: hidden;
+			}
+			.lunbo img.XIANSHI{
+				display: block;
+			}
+			.BTN{
+				position: absolute;
+				
+				left: 100px;
+				top:370px;
+				margin-left: 150px;
+				width: 200px;
+				display: block;
+				
+               }
+            button{
+               	height: 10px;
+               	width: 20px;
+               	margin-left: 10px;
+               	background:floralwhite;
+               }
+			.yan{
+				background: red;
+			}
+			#riqi{
+				color:indianred;
+				text-align: center;
+				font-size: 40px;
+				margin-top: 110px;
+			
+			}
+			#shijian{
+			     color: slateblue;
+				text-align: center;
+				font-size: 50px;
+			    margin-top: 20px;  /*设置字体居中位置*/
+			}
+			#wea{
+				
+				margin-top: 20px;
+				text-align: right;
+				margin-right: 90px;
+				color: whitesmoke;
+				font-size: 20px;
+			}
+			
+			
+			textarea{
+				resize: none;
+				border-radius: 10px;
+				border: 2px solid seagreen;
+				text-indent: 2em;
+				font-size: 15px;
+				/*position: relative;
+				left: 50px;*/
+				display: block;
+				margin-top: 8px;
+			}
+			textarea:focus{
+				outline: none;
+			
+			}
+		
+			.kuai{
+				display: block;
+				padding-left: 50px;
+				margin-top: 10px;
+				color: green;
+			}
+			input{
+				border-radius: 10px;
+				border: 2px green solid;
+			}
+			input:focus{
+				outline: none;
+			}
+			.box7{
+				position: relative;
+				left: 520px;
+				display: block;
+				height: 20px;
+				display: block;
+				height: 30px;
+				text-indent: 1em;
+			}
+			.box6{
+				position: relative;
+				left: 555px;
+				
+				height: 30px;
+				width: 50px;
+				
+			}
+		
+			
+			#BOX1{
+				height: 30px;
+				width: 1000px;
+				/*position: absolute;
+				bottom: 10px;*/
+				margin-top: 10px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 30px;
+				background-color: darkseagreen;
+			}
+			.B{
+				text-decoration: none;
+				color: black;
+				font-weight: bold;
+				display: block;
+				padding-left: 30px;
+				height: 30px;
+				font-family: "微软雅黑";
+			}
+			.box8{
+				min-height: 590px;
+				width: 560px;
+				float: left;
+			}
+			.box9{
+				float: right;
+				margin-top: 120px;
+				margin-right: 10px;
+			}
+			.box10{
+				height: 30px;
+				text-indent: 1em;
+			}
+			#BOX3{
+				margin-top: 20px;
+			}
+			.pp{
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			#BOX4{
+				margin-top: 30px;
+				background: url(../img/191121509187547105.gif) no-repeat ;
+				width: 1000px;
+				height: 600px;
+				
+				
+			}
+			#BOX5{
+				width:381px ;
+				position: absolute;
+				right: 2px;
+				top: 1300px;
+				font-size: 20px;
+				font-family: "微软雅黑";
+			}
+			
+			span{
+				color: seagreen;
+				font-size: 30px;
+				font-family: "微软雅黑";
+				font-weight: bold;
+			}
+			#BOX6{
+				width: 550px;
+				float: left;
+				font-family: default;
+				font-weight: 700;
+				color: coral;
+				padding-top: 10px;
+				
+			}
+			#BOX6 p{
+				text-indent: 2em;
+			}
+			#BOX7{
+				width: 1000px;
+				height: 80px;
+				
+				background:url(../img/20090619_4b98ca852d10c186f10fykdivYqGztfg.gif);
+			}
+			.C{
+				color: red;
+				font-size: 15px;
+				font-family: script;
+			}
+			.end11{
+				text-align: center;
+				font-size: 20px;
+				margin-top: 20px;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+			.pinglun{
+				width: 550px;
+				height: 35px;
+				text-align: right;
+				border-bottom: 3px solid;
+			}
+			.pinglun a{
+				width: 80px;
+				height: 50px;
+				display: block;
+				float: right;
+				border-radius: 10px;
+				font-size: 20px;
+				color: midnightblue;
+				font-family: "微软雅黑";
+				font-weight: 550;
+			}
+			.jintian{
+				width: 302px;
+				height: 500px;
+				float: left;
+			}
+			.nihao{
+				line-height: 50px;
+				text-indent: 2em;
+				font-family: tahoma;
+				font-size: 20px;
+				color: cadetblue;
+			}
+			.nihao1{
+				line-height: 50px;
+				text-indent: 4em;
+				color: darkslategrey;
+				font-weight: 600;
+			}
+			.ding{
+				width: 400px;
+				height: 300px;
+				float: right;
+				margin-top: 250px;
+				line-height: 30px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+			}
+			.ding span{
+				color: saddlebrown;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="TITLE">
+			<div class="TITLE1">树洞</div>
+		</div>
+		<div class="header">
+			<div class="box5"><a class="A" href="http://www.1ting.com/" target="_blank">来点音乐</a></div>
+			<div  class="box5"><a class="A" href="http://dianying.2345.com/" target="_blank">看会电影</a></div>
+			<div  class="box5"><a class="A" href="https://www.jd.com/" target="_blank">随便逛逛</a></div>
+			<div  class="box5"><a class="A" href="发表网页.html" target="_blank">我要发帖</a></div>
+			<div class="login">
+				<div class="img1"></div>
+				<div  class="zhuce"><a href="注册页面.html" target="_blank">注册</a></div>
+				<div class="denglu"><a href="登陆页面.html" target="_blank">登陆</a></div>
+			</div>
+		</div>
+		<div class="potho">
+			
+			<div id="BOX">
+				<div class="box1">
+					<h1>这里是你倾诉的港湾</h1>
+					
+				</div>
+				<div class="box2">
+					<h3>世界很大，我们都需要一个拥抱。</h3>
+					
+				</div>
+				<div class="clear"></div>
+		<div class="jintian">
+			<div class="timebox">      <!--  添加块 --> 
+				<p id="riqi">2014年11月12日&nbsp;星期一</p>   <!--  设置块内日期和时间 --> 
+				<p id="shijian">12:15:25</p>
+				<p id="wea"> 北京天气：多云</p>
+		   </div> 
+		 <p class="nihao">  时间不会停止 </p>
+		  <p class="nihao1">  正如我一如既往的在这里等你来</p>
+		</div>
+			<div class="lunbo">
+				<div> 
+					<img src="../img/a0113.jpg"  class="XIANSHI"/>
+					<img src="../img/c4.jpg" />
+					<img src="../img/d3.jpg" />
+					<img src="../img/v3.jpg" />
+					<!--<img src="../img/a12.png" />
+					<img src="../img/a6.jpg"/>
+					<img src="../img/a9.JPEG" />-->
+				</div>
+				
+				<div class="BTN">
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+		
+			</div>	
+			<div class="clear"></div>
+			<br />
+					<hr /><hr /><hr />
+				<hr />
+				<div class="box8">
+					<ul>
+					
+					<img src="../img/20090619_4b98ca852d10c186f10fykdivYqGztfg.gif" height="90px" width="1000px"/>
+					<h1> <a href="#">热门讨论区</a></h1>
+					<hr />
+					<hr />
+					<hr />
+					<br />
+					<a class="B" href="#"><li>今天6.1.祝我节日快乐！        </li> </a>
+				<div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div>
+			
+					<br />
+					<a class="B" href="#"><li> 彼采葛兮，一日不见，如三月兮。</li></a>
+					<div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div><br />
+					<a class="B" href="#"><li>参差荇菜，左右采之。窈窕淑女，琴瑟友之。
+</li></a><div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div>
+<br />
+					<a class="B" href="#"><li>求之不得，寤寐思服。悠哉悠哉，辗转反侧。</li></a>
+					<div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div><br />
+					<a class="B" href="#">
+<li>关关雎鸠，在河之洲。窈窕淑女，君子好逑。</li></a>
+<div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div><br />
+					<a class="B" href="#"><li>长长短短鲜荇菜，两边仔细来挑选。善良美丽的少女，钟声换来她笑颜。</li></a>
+					<div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div><br />
+					<a class="B" href="#"><li>关车之辖兮，思娈季女逝兮。匪饥匪渴，德音来括。今天又下雨了。
+
+</li></a>
+<div class="pinglun">	<a href="#">点赞</a>  <a href="#">评论</a>  </div><br />
+				</ul>
+				
+			
+				
+				</div>
+				
+				<div class="box9">
+					<img src="../img/838192676775804514.jpg" height="550px" width="400px"/>
+				</div>
+			    <div id="BOX3">
+			    	<img src="../img/timg.jpg" width="550px" height="300px"/>
+			    </div>
+			    <div id="BOX4">
+			    <div id="BOX6">
+			    	<span style="color: crimson;">心灵鸡汤<hr /><hr /><hr /></span><br />
+			    <p>谁没点儿自认美好的秘密呢？只不过我们的秘密常被鼠辈掐指一算后，以舌代步穿行坊间。多少暗香萦怀的快活，都白白消解于旁人无关痛痒的笑谈中了。</p>
+<span class="C">秘密因为不在人前占地方，在心里就格外舒展、笃定。像心跳，妙不可言。</span>
+<p>有鸟巢的树不怕叶落，因为它有鸟的歌唱站满枝头。有美好秘密的人，再孤独也不会寂寞。秘密不能太大，大了不易收藏，容易暴露目标；也不能太小，太小了极易藏丢。最好的尺寸是刚好让别人忽略，又正好够自己揣着偷笑。</p>
+<p>深夜散步，意外目睹一树花第一个将春天满怀捧出，那花苞次第打开的声音让所有的乐器都屏息肃立，花香光芒一般照亮了周围的空气和街巷。</p>
+
+<p>一棵树的随心之举，无意之中给了天地间美轮美奂的画面和音乐，而这从此成了那个散步的人的秘密，但永远无法影音重现地与人分享，也无人能偷走。这样的秘密是美丽而不累人的秘密。暗暗喜欢一个人，却不说出。心跳有时如发了疯似的响鼓重锤，有时如打盹儿的蜗牛。心情有时想跳舞，有时想跳河。</p>
+<p>这样的秘密是天堂也是地狱，这是一场一个人的战争，输赢都激动人心。看上了商店橱窗里的一件东西，喜欢得紧，偏不买回家，而是常常作随意状隔三岔五地去浏览，直到看熟看厌，或者那东西被人买走，终于释然。这样的秘密让人怜惜也让人尊重。</p>
+<p>美好的秘密是一个人的矿藏，虽大多不能见天日，但证明有资源。有秘密的人是有内容的人、有趣的人，可以慢慢发现、品评的人。
+美好的秘密是一个人的熏香，在自己的空间里以香自焚，平方越小，香气越浓。
+看好我们的秘密，如看好我们的存折，或爱人。</p>
+			    </div>
+			    	<div id="BOX5">
+			    		 <p>
+			    		 	<span>春泥</span>
+			    		 	<hr /><hr /><hr /><hr />
+			    		 	<br />
+			    		 	漫天的话语<br />
+							纷乱落在耳际<br />
+							你我沉默不回应<br />
+							牵你的手<br />
+							你却哭红了眼睛<br />
+							路途漫长无止尽<br />
+							多想提起勇气<br />
+							好好的呵护你<br />
+							不让你受委屈<br />
+							苦也愿意<br />
+							那些痛的记忆
+							落在春的泥土里<br />
+							滋养了大地<br />
+							开出下一个花季<br />
+							风中你的泪滴<br />
+							滴滴落在回忆里<br />
+							让我们取名叫做珍惜<br />
+						        迷雾散尽<br />
+							一切终于变清晰<br />
+							爱与痛都成回忆
+							遗忘过去<br />
+							繁花灿烂在天际
+			    		 	等待已有了结局
+			    		 </p>
+			    	</div>
+					<div class="ding"> <h2>生活是需要畅想的</h2><hr /> <hr /><hr /> <hr />
+						
+					<span>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没有对明天的美好向往，我们就难以迈开今天的脚步，我们今天的幸福与快乐，就是昨天憧憬的种子孕育出的花朵。但是畅想如果没有脚，是走不远的，我们不能停止奋斗的步履，虚废太多的光阴，为明天的人生走向而发愁。不要忽略对当下的珍惜，走好眼下最坚实的那一步，前面才会海阔天空。</span> </div>
+			    </div>
+			    <div id="BOX7"></div>
+			    <div class="end11">
+			<a href="#">关于树洞&nbsp;|&nbsp;</a><a href="#">建议意见&nbsp;|&nbsp;</a><a href="#">请求删帖&nbsp;|&nbsp;</a><a href="#">树洞空间</a> </div>
+				
+				<div id="BOX1">
+					
+				这里没有尔虞我诈，没有虚伪的面具，只有真实的自己。记住，你就是你，不一样的烟火。
+			    </div>
+			   
+			</div>
+			 <p class="pp">以上内容归版权所有者所属  &copy;</p>
+		</div>
+	
+	
+	
+	
+	<script> // 写一对script  包起我们编写的jss命令  
+			
+	function getTime () {      // 写一个整体的函数，为了方便后面循环语句的使用   
+		
+	
+			var shuzu =new Array('日','一','二','三','四','五','六') // 写一个数组，为了方便后面将数字转换为中文汉字。
+			
+			var time = new Date();  // 声明一个变量,获取到当前的时间信息
+		    var year = time.getFullYear();  // 获取到当前的年份
+			var month = time.getMonth()+1;// 获取到当前的月份，后面加上1，获取到的月份会比实际月份少一天，是0-11  这 12个整数所以。。
+			var day = time.getDate();// 获取到当前的天数几号
+			var weekday = time.getDay();// 获取到当前的星期，会显示0-6这7个整数。
+		
+			var hours = time.getHours();// 获取到当前的小时，没有0
+			var min = time.getMinutes();// 获取到当前的分钟，没有0
+			var sco = time.getSeconds();// 获取到当前的秒，没有0 
+			
+			function hanshu1(x){  // 再写一个函数。用if语句来实现10以内的数前面会有个0，
+	  	if(x<10){
+	  		x='0'+x;
+	  	}
+	  	return x;
+	  }
+			 hours1=hanshu1(hours); // 在用一个变量来接受我们输出的值
+			min1=hanshu1(min);
+			sco1=hanshu1(sco);
+			
+		timebox = year+'年'+month+'月'+day+'日   星期'+shuzu[weekday];  //将获取到的年月日信息写入另一个变量，方便后面用
+			// console.log(timebox);  测试代码是否正确，能否获取到信息
+			
+	       xiaoshi = hours1+':'+min1+':'+sco1;  //将获取到的时间分钟秒信息写入另一个变量，方便后面用
+			
+			//console.log(xiaoshi);   测试代码是否正确，能否获取到信息
+			var riqi = document.getElementById('riqi');  //通过id获取上面的元素，并赋值给
+		riqi.innerText=timebox;        //然后将上面获取到的年月日信息在写入到刚开始那个静态年月日里面去
+		 var shijian =document.getElementById('shijian');
+		 shijian.innerText=xiaoshi;
+	}                                             //到这块我们的函数写完
+	 getTime()                             //我么在输出一下我们的函数值
+	 setInterval(function(){               //循环语句  ，让数字每次都加1000毫秒的循环运行下去
+	 	getTime()                          //再将上面的函数输出写入到这里面就行
+	 },1000)
+	  </script>
+	  <script src="jquery-1.9.1.min.js" ></script>
+		<script>
+			
+			var ONE = 1
+			$(document).ready(function(){
+			$('button').mouseover(function(){
+				var n = $(this).index()+1;
+				$('button:nth-child('+n+')').addClass('yan').siblings().removeClass('yan')        
+				$('.lunbo img:nth-child('+n+')').fadeIn().siblings().fadeOut()
+				
+				ONE = n
+			})
+			})
+			setInterval(function(){
+				
+				if(ONE>4){
+					ONE=1
+				}
+				$('.lunbo img:nth-child('+ONE+')').fadeIn().siblings().fadeOut()
+				$('button:nth-child('+ONE+')').addClass('yan').siblings().removeClass('yan')        
+				ONE = ONE + 1
+			},2000)
+			
+		</script>
+	</body>
+</html>

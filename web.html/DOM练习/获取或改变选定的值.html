@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>选择你喜欢的水果</p>
+		<input type="checkbox" name="shuiguo" value="香蕉" /> 香蕉
+		<input type="checkbox" name="shuiguo" value="丽" /> 丽
+		<input type="checkbox" name="shuiguo" value="苹果" /> 苹果
+		<input type="button" value="显示出你的选择" onclick="hanshu()" />
+		
+		<div id="here"></div>
+		<hrs />
+		<br />
+		<form>
+		<input type="checkbox" name="xuanze" value="爬山" />爬山
+		<input type="checkbox" name="xuanze" value="上天" />上天
+		<input type="checkbox" name="xuanze" value="下地" />下地
+		<input type="checkbox" name="xuanze" value="游泳" />游泳
+		<input type="checkbox" name="xuanze" value="健身" />健身
+		<input type="checkbox" name="xuanze" value="睡觉" />睡觉
+		<br />
+		<input type="button" value="全选" onclick="han()"/> 
+		<input type="button" value="全不选"  onclick="han1()"/> 
+	</form>
+		<script >
+			var x=document.getElementsByName("shuiguo");
+
+			function hanshu(){
+				var h="";
+				
+				for(var i=0;i<x.length;i++){
+					if(x[i].checked==true){
+						h=h+x[i].getAttribute("value"); // 通过元素节点的属性名称获取属性的值。
+					  
+					}
+				
+				}
+				document.getElementById("here").innerHTML=h;
+			
+			}
+
+	
+
+		</script>
+	
+	
+	<script>
+		var a=document.getElementsByName("xuanze");
+		function han(){
+			
+			for(var i=0;i<a.length;i++){
+				a[i].setAttribute("checked","checked");
+				a[i].checked=true;
+			}
+		}
+		function han1(){
+			for(var i=0;i<a.length;i++){
+				a[i].checked=false;
+			
+			}
+		}
+	</script>
+	</body>
+</html>

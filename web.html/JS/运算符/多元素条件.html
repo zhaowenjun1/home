@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="ming"></input>
+		
+		<br />
+		<input  id="age" /><br />
+		<p id="a"></p>
+		<button onclick="han()">提交</button>
+		<script>
+			function han(){
+				var age1=document.getElementById("age").value;  //获取到input 标签里面的具体数值  要加上   .value   。
+				var ming=document.getElementById("ming").value;
+				var tishi=(age1<15)?ming+","+"你确定你是--"+age1+"，开玩笑":ming+","+"你确定你是--"+age1+"，开玩笑";
+				var xianshi=document.getElementById("a");
+				xianshi.innerHTML=tishi;
+			}
+		</script>
+	</body>
+</html>

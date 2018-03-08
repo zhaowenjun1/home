@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.Big{
+				width: 790px;
+				height: 340px;
+				border: 1px #3E3E3E solid;
+				position: relative;
+			}
+			.Big img{
+				display: none;
+				position: absolute;
+			}
+			.shuzi{
+				width: 143px;
+				position: absolute;
+				bottom: 20px;
+				margin: 0 auto;
+				background: none;
+				border-radius: 10px;
+				left: 50%;
+				margin-left: -71px;
+			}
+			button{
+			
+				border: none;
+				border: 1px white solid;
+				background:white;
+				border-radius: 10px;
+				
+			}
+			.Big .show{
+				display: block;
+			}
+			.yanse{
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="Big">
+		<div>	<img src="../img/58e73aa0Nbd4b09f0.jpg" class="show">
+			<img src="../img/58e74333Na53b8e8b.jpg">
+			<img src="../img/58eb22efNfc384301.jpg">
+			<img src="../img/58ed9c26Nc3d8d4e3.jpg">
+			<img src="../img/58ef2947N3fb1697e.jpg"></div>
+		<div class="shuzi">
+				<button>1</button>
+				<button>2</button>
+				<button>3</button>
+				<button>4</button>
+				<button>5</button>
+			
+		</div>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script>
+			var num = 1                  //定义一个变量等于第一张图片开始循环
+			
+			
+			$('button').mouseover(function(){            //鼠标经过按钮时
+				 var NN = $(this).index()+1;           //获取到点击按钮时的序号在加1即为当前的第几个按钮    
+				
+			
+			$('button:nth-child('+NN+')').addClass('yanse').siblings().removeClass('yanse')  //获取到点击到第几个按钮然后添加一个样式，
+			                                                         //其他同级未点击的按钮移除css样式
+			  $('.Big img:nth-child('+NN+')').fadeIn().siblings().fadeOut()  //同样获取点击第几个按钮，然后第几个图片显示
+			             
+			  num = NN      //在把获取到的按钮序号赋值给刚开始设置的变量，让从点击的第几个图片开始往后继续循环
+			    }) 
+		setInterval(function(){            //循环  语句
+				if(num>5){               //如果数量大于5，则从头开始循环
+				num = 1 
+			}
+			
+			  $('.Big img:nth-child('+num+')').fadeIn().siblings().fadeOut() 	//图片效果
+			  $('button:nth-child('+num+')').addClass('yanse').siblings().removeClass('yanse')   //按钮效果。。。同上
+			num = num + 1 
+			},1000)
+		</script>
+	</body>
+</html>

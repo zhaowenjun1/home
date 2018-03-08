@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;/* 取消所有填充的默认效果*/
+			}
+			.header{
+				width: 500px;
+                min-height: 500px;/*设置整体块的最小高度*/
+				border: 1px black solid;
+			        margin: 0 auto;/* 设置整体块的居中位置   ， padd 距离浏览器底部距离*/
+			        padding-bottom: 30px;
+			}
+			.box1{
+				width:500px;
+				height: 150px;
+				background: red;
+				border: 1px black scroll;/* 边框设置*/
+			
+		text-align: center;
+		line-height: 150px;
+				font-size: 50px;
+				color: #000000;
+				
+				
+			position: relative;/*以这个块为参照物*/
+			
+			}
+			
+		.ti{
+			
+                width: 30px;
+                height: 30px;
+                line-height:30px;/*设置字体x在块中水平居中，也可以加背景颜色*/
+	          
+			position: absolute; /* 将x 对照参照 设成可移动的元素，上 下 左右*/
+	          right: 10px;/*块 靠右，距离顶部距离*/
+	          top: 10px;
+			
+			border: 1px white solid;
+			border-radius: 60px;/*设置边框圆角，半径不超过容器高度 */
+		font-size: 35px;
+	
+			
+			
+		}
+		.yi{
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px white solid;
+			position: absolute;
+			right: 50px;
+			top: 10px;
+			border-radius: 30px;
+			
+		}
+		 a{
+			text-decoration: none;
+			color: black
+		}
+	       a:hover{
+	       	cursor: pointer;
+	       }
+		
+			.box2{
+				
+			    
+	          padding:20px 40px ;/*盒子模型填充  */
+				
+				min-height: 500px;/*最小高度。可以随着文件增多而自己改变高度 */
+			}
+			.box2 li{
+			
+				font-weight: bold;/*设置字体粗细*/
+				font-size: 30px;
+				margin: 10px ;/* 外边距设置*/
+			
+			}
+			.yuan{
+				width: 120px;
+				height: 60px;
+				border: 1px black solid;
+				margin: 0 auto;/**/
+				font-size: 30px;
+				text-align: center;
+				line-height: 60px;/*设置块中的字体垂直居中*/
+				border-radius: 20px;/*设置边框圆角  半径     最大等于边框高*/
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="box1">
+			
+					内涵段子
+				<span class=
+					"yi"><a href="#">-</a></span>
+					
+					
+				<span class=
+					"ti"><a href="#">x</a></span>
+				</div>
+			
+			<div class="cle"></div>
+			<div class="box2">
+				<ul>
+					<li>有人说：你们学校到底有多大,我说俩个人就像在异地</li>
+					<li>有人说：你们学校到底有多大,我说俩个人就像在异地</li>
+					</ul>
+			</div>
+			<div class="yuan"><a href="#">关闭</a></div>
+		</div>
+	</body>
+</html>

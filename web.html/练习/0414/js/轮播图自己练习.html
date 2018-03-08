@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.big{
+				width: 790px;
+				height: 340px;
+				border: 1px #3E3E3E solid;
+				position: relative;
+				overflow: hidden;
+			}
+			img{
+				display: none;
+				/*transition:all 1500ms linear; */ 
+			}
+			img.XIANSHI{
+				display: block;
+			}
+			.BTN{
+				width: 95px;
+				
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				margin-left: -48px;
+				display: block;
+               }
+                button{
+               	height: 10px;
+               	background:floralwhite;
+               }
+			.yan{
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+		<div>	<img src="../img/58e73aa0Nbd4b09f0.jpg"  class="XIANSHI"/>
+			<img src="../img/58e74333Na53b8e8b.jpg" />
+			<img src="../img/58ed9c26Nc3d8d4e3.jpg" />
+			<img src="../img/58ef2947N3fb1697e.jpg" />
+			</div>
+			<div class="BTN">
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
+			</div>
+		</div>
+		<script src="jquery-1.9.1.min.js" ></script>
+		<script>
+			
+			var ONE = 1
+			$(document).ready(function(){
+			$('button').mouseover(function(){
+				var n = $(this).index()+1;
+				$('button:nth-child('+n+')').addClass('yan').siblings().removeClass('yan')        
+				$('img:nth-child('+n+')').fadeIn().siblings().fadeOut()
+				
+				ONE = n
+			})
+			})
+			setInterval(function(){
+				
+				if(ONE>4){
+					ONE=1
+				}
+				$('img:nth-child('+ONE+')').fadeIn().siblings().fadeOut()
+				$('button:nth-child('+ONE+')').addClass('yan').siblings().removeClass('yan')        
+				ONE = ONE + 1
+			},1500)
+			
+		</script>
+	</body>
+</html>
